@@ -39,6 +39,7 @@ let b:sections = [
       \ "Unmerged changes",
       \ "Unpulled changes",
       \ "Recent commits",
+      \ "Recent branches",
       \ "Staged changes",
       \ "Stashes",
       \ "Rebasing",
