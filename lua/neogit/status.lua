@@ -391,7 +391,7 @@ local function draw_buffer()
 
   render_section("Recent commits", "recent")
   print(vim.inspect(git.branch.get_recent_local_branches()))
-  render_section("Recent branches", "recent_branches", git.branch.get_recent_local_branches())
+  render_section("Recent branches", "recent_branches", { items = git.branch.get_recent_local_branches() })
 
   M.status_buffer:replace_content_with(output)
   M.locations = new_locations
